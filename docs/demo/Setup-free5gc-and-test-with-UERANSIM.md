@@ -55,7 +55,7 @@ spec:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   local:
-    path: /home/vagrant/kubedata
+    path: /home/ubuntu/kubedata
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -63,7 +63,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker1
+          - vm-0-17-ubuntu
 EOF
 ```
 **NOTE:** you must create the folder on the right node before creating the Peristent Volume.
