@@ -22,14 +22,14 @@ global:
 #Global network parametes
   n4network:
     name: n4network
-    masterIf: eth0
+    masterIf: eth1
     subnetIP: 10.100.50.240
     cidr: 29
     gatewayIP: 10.100.50.246
     excludeIP: 10.100.50.246
   n3network:
     name: n3network
-    masterIf: eth0
+    masterIf: eth1
     subnetIP: 10.100.50.232
     cidr: 29
     gatewayIP: 10.100.50.238
@@ -37,13 +37,13 @@ global:
   n6network:
     name: n6network
     masterIf: eth0
-    subnetIP: 10.100.100.0
-    cidr: 24
-    gatewayIP: 10.100.100.1
-    excludeIP: 10.100.100.254
+    subnetIP: 172.22.0.0
+    cidr: 20
+    gatewayIP: 172.22.0.1
+    # excludeIP: 172.22.0.1
   n9network:
     name: n9network
-    masterIf: eth0
+    masterIf: eth1
     subnetIP: 10.100.50.224
     cidr: 29
     gatewayIP: 10.100.50.230
@@ -67,7 +67,7 @@ upf:
   n4if:  # PFCP
     ipAddress: 10.100.50.241
   n6if:  # DN
-    ipAddress: 172.22.0.17
+    ipAddress: 172.22.0.14
 
   podAnnotations: {}
     # additional annotations

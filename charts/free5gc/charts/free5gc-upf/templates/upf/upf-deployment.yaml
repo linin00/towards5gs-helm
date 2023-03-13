@@ -71,6 +71,7 @@ spec:
           containerPort: 8805
           protocol: UDP
         command: ["{{ .volume.mount }}/wrapper.sh"]
+        # command: ["sleep", "30m"]
         volumeMounts:
         - mountPath: {{ .volume.mount }}
           name: {{ .volume.name }}

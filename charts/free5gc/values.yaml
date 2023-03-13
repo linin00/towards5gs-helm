@@ -42,21 +42,21 @@ global:
   #Global network parametes
   n2network:
     name: n2network
-    masterIf: eth0
+    masterIf: eth1
     subnetIP: 10.100.50.248
     cidr: 29
     gatewayIP: 10.100.50.254
     excludeIP: 10.100.50.254
   n3network:
     name: n3network
-    masterIf: eth0
+    masterIf: eth1
     subnetIP: 10.100.50.232
     cidr: 29
     gatewayIP: 10.100.50.238
     excludeIP: 10.100.50.238
   n4network:
     name: n4network
-    masterIf: eth0
+    masterIf: eth1
     subnetIP: 10.100.50.240
     cidr: 29
     gatewayIP: 10.100.50.246
@@ -65,12 +65,12 @@ global:
     name: n6network
     masterIf: eth0
     subnetIP: 172.22.0.0
-    cidr: 24
+    cidr: 20
     gatewayIP: 172.22.0.1
-    excludeIP: 172.22.0.254
+    # excludeIP: 172.22.0.1
   n9network:
     name: n9network
-    masterIf: eth0
+    masterIf: eth1
     subnetIP: 10.100.50.224
     cidr: 29
     gatewayIP: 10.100.50.230
